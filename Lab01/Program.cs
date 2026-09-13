@@ -73,11 +73,17 @@
 
  // TODO: часто используется, чтобы отметить недоделанный участок кода
 
-int scholarship = 5000;   // стипендия
-int monthlyExpenses = 3000; // расходы на еду и проезд
-int remainder = scholarship - monthlyExpenses;
-Console.WriteLine($"Останется к концу месяца: {remainder} руб.");
+// int scholarship = 5000;   // стипендия
+// int monthlyExpenses = 3000; // расходы на еду и проезд
+// int remainder = scholarship - monthlyExpenses;
+// Console.WriteLine($"Останется к концу месяца: {remainder} руб.");
 
-const int MonthsInSemester = 4;
-int semesterRemainder = remainder * MonthsInSemester;
-Console.WriteLine($"За семестр ({MonthsInSemester} мес.): {semesterRemainder} руб.");
+// const int MonthsInSemester = 4;
+// int semesterRemainder = remainder * MonthsInSemester;
+// Console.WriteLine($"За семестр ({MonthsInSemester} мес.): {semesterRemainder} руб.");
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int fullLessons = totalMinutes / minutesPerLesson;
+int remainingMinutes = totalMinutes % minutesPerLesson;
+Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {remainingMinutes} минут");
