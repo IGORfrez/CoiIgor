@@ -40,36 +40,44 @@
 // Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 // Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
-Console.WriteLine();
-Console.WriteLine("Способы собрать строку");
-string firstName = "Анна";
-string lastName = "Смирнова";
+// Console.WriteLine();
+// Console.WriteLine("Способы собрать строку");
+// string firstName = "Анна";
+// string lastName = "Смирнова";
 
 // Способ 1: конкатенация через оператор +
-string fullNameConcat = firstName + " " + lastName;
+// string fullNameConcat = firstName + " " + lastName;
 
 // Способ 2: интерполяция через $""
-string fullNameInterp = $"{firstName} {lastName}";
+// string fullNameInterp = $"{firstName} {lastName}";
 
 // Способ 3: метод string.Concat
-string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
-Console.WriteLine(fullNameConcat);
-Console.WriteLine(fullNameInterp);
-Console.WriteLine(fullNameConcatMethod);
-Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+// string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+// Console.WriteLine(fullNameConcat);
+// Console.WriteLine(fullNameInterp);
+// Console.WriteLine(fullNameConcatMethod);
+// Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
-Console.WriteLine();
-Console.WriteLine("Константы");
-const double VatRate = 0.20;
-const string CollegeName = "ВФ ВолГУ";
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
-Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+// Console.WriteLine();
+// Console.WriteLine("Константы");
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ ВолГУ";
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
+// Console.WriteLine($"Учебное заведение: {CollegeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
 
 // Однострочный комментарий — до конца строки
 
-/* Многострочный комментарий —
-может занимать несколько строк */
+/* Многострочный комментарий — может занимать несколько строк */
 
-// TODO: часто используется, чтобы отметить недоделанный участок кода
+ // TODO: часто используется, чтобы отметить недоделанный участок кода
+
+int scholarship = 5000;   // стипендия
+int monthlyExpenses = 3000; // расходы на еду и проезд
+int remainder = scholarship - monthlyExpenses;
+Console.WriteLine($"Останется к концу месяца: {remainder} руб.");
+
+const int MonthsInSemester = 4;
+int semesterRemainder = remainder * MonthsInSemester;
+Console.WriteLine($"За семестр ({MonthsInSemester} мес.): {semesterRemainder} руб.");
