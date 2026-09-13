@@ -1,0 +1,11 @@
+﻿string myName = "Цой Игорь"; 
+string groupName = "ИСП-252"; 
+int courseNumber = 2;
+double averageGrade = 4.6; 
+bool isBudget = true;
+Console.WriteLine("Знакомство");
+Console.WriteLine($"Стyдeнт: {myName}");
+Console.WriteLine($"Гpyппa: {groupName}");
+Console.WriteLine($"Kypc: {courseNumber}");
+Console.WriteLine($"Средний балл: {averageGrade}");
+Console.WriteLine($"Бюджетное место: {isBudget}");
